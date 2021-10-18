@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastien Roques | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">BR</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="#home">Accueil</a></li>
+                <li class="menu-item"><a href="#about">A propos</a></li>
+                <li class="menu-item"><a href="#work">Projets</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="text-box">
+            <h1>Bastien Roques</h1>
+            <h2>Développeur Python - Data Analyst</h2>
+            <a href="#about" class="btn" id="btn-more">En savoir plus</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Présentation</h2>
+        </div>
+        <div class="content">
+            <div class="content-box w-50">
+                <h3>Bonjour !</h3>
+                <p>
+                    Je suis Bastien, <span>Développeur Data IA</span> formé chez l'école IA Microsoft.<br>
+                    Après une premère expérience dans le milieu bancaire, je me suis réorienté dans le domaine
+                    numérique en autodidacte sur la réalisation d'applications web puis dans la data science en me
+                    spécialisant dans le langage <span>Python</span>.<br>
+                    Passionné par la programmation, j'aime expérimenter, découvrir et apprendre des nouvelles
+                    technologies.
+                </p>
+                <a class="btn" href="https://www.linkedin.com/in/bastienroques/" target="_blank">En savoir plus</a>
+            </div>
+            <div class="w-50">
+                <img src="img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Projets</h2>
+        </div>
+
+        <div class="row">
+            <div class="filter-buttons">
+                <ul id="filter-btns">
+                    <li class="active" data-target="all">TOUS</li>
+                    <li data-target="data">DATA</li>
+                    <li data-target="machine learning">MACHINE LEARNING</li>
+                    <li data-target="web">WEB</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="portfolio" id="portfolio-gallery">
+
+            <!-- <div class="card" data-id="web">
+                <div class="card-header">
+                    <h3 class="card-title">Barber</h3>
+                </div>
+                <div class="img-box">
+                    <a href="#" class="">
+                        <img class="card-img" src="img/projets/barber.png" alt="">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Site vitrine pour un barbier</p>
+                    <p><small>HTML CSS JS</small></p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn-project">Voir le projet</a>
+                </div>
+            </div> -->
+
+            <div class="card" data-id="machine learning">
+                <div class="card-header">
+                    <h3 class="card-title">Pictogram Detector</h3>
+                </div>
+                <div class="img-box">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tRa3_pykiDo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        target="_blank" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Reconnaissance de pictogramme | COMPUTER VISION</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.youtube.com/watch?v=tRa3_pykiDo&ab_channel=SanofiFrance" target="_blank"
+                        class="btn-project" disabled>Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="data">
+                <div class="card-header">
+                    <h3 class="card-title">Datagp</h3>
+                </div>
+                <div class="img-box">
+                    <a href="https://datagp.herokuapp.com/" target="_blank" class="">
+                        <img class="card-img" src="img/projets/datagp.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Dashboard | Plotly Dash
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/broques91/datagp" target="_blank" class="btn-project">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="machine learning">
+                <div class="card-header">
+                    <h3 class="card-title">Tagnow</h3>
+                </div>
+                <div class="img-box">
+                    <a href="https://drive.google.com/file/d/145bp0KMCtIc1iQDtK4Hfv0GXQVFHfP2L/view?usp=sharing"
+                        target="_blank" class="img-fit">
+                        <img class="card-img" src="img/projets/tagnow.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Prédiction automatique de tags | NLP</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/145bp0KMCtIc1iQDtK4Hfv0GXQVFHfP2L/view?usp=sharing"
+                        target="_blank" class="btn-project">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="web">
+                <div class="card-header">
+                    <h3 class="card-title">Fyyur</h3>
+                </div>
+                <div class="img-box">
+                    <a href="https://brfyyur.herokuapp.com/" target="_blank" class="img-fit">
+                        <img class="card-img" src="img/projets/fyyur.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Plateforme de réservation d'artistes | Flask | SQL</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://brfyyur.herokuapp.com/" target="_blank" class="btn-project">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="web">
+                <div class="card-header">
+                    <h3 class="card-title">Pizza Mama</h3>
+                </div>
+                <div class="img-box">
+                    <a href="https://brpizzamamadjango2.herokuapp.com/" target="_blank" class="">
+                        <img class="card-img" src="img/projets/pizza-mama.jpg" alt="">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Site restaurant | Django</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://brpizzamamadjango2.herokuapp.com/" target="_blank" class="btn-project">Voir le
+                        projet</a>
+                </div>
+            </div>
+
+            <div class="card" data-id="machine learning">
+                <div class="card-header">
+                    <h3 class="card-title">Triof</h3>
+                </div>
+                <div class="img-box">
+                    <a href="https://drive.google.com/file/d/1pISM0SNfhbHoVbcIWewXZdAb9OF1vOB1/view?usp=sharing"
+                        target="_blank" class="img-fit">
+                        <img class="card-img" src="img/projets/triof.png" alt="">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Application de tri de déchets | Azure ML | API
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1pISM0SNfhbHoVbcIWewXZdAb9OF1vOB1/view?usp=sharing"
+                        target="_blank" class="btn-project">Voir le projet</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Me contacter</h2>
+        </div>
+        <div class="content">
+            <div class="contact-info">
+                <h3>Informations de contact</h3>
+                <div class="contact-info-box">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Localisation</h3>
+                            <p>Bordeaux</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Téléphone</h3>
+                            <p>+33 6 14 01 52 85</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>bastien.roques971@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Réseaux</h3>
+                            <p><a href="https://www.linkedin.com/in/bastienroques/" target="_blank">Linkedin</a></p>
+                            <p><a href="https://github.com/broques91" target="_blank">Github</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <form action="">
+                    <h3>Message</h3>
+                    <input type="text" name="" id="" placeholder="Nom">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <textarea placeholder="Votre message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <p>
+            &copy; 2021 Bastien ROQUES
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
