@@ -118,10 +118,41 @@ header.sticky ul li a {
     line-height: 1.5em;
 }
 
-.banner h2 {
-    font: size 1.5em;
-    font-weight: 500;
-    color: #fff;
+.text-anim {
+    display: flex;
+    justify-content: center;
+    color: #fff !important;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+#target {
+    display: flex;
+    margin-left: 1rem;
+    position: relative;
+}
+
+#target::after {
+    content: '';
+    position: absolute;
+    height: 3rem;
+    width: 5px;
+    background: transparent;
+    top: 0;
+    transform: translateY(-4px);
+    right: -5px;
+    animation: anim 0.9s linear infinite;
+    -webkit-animation: anim 0.9s linear infinite;
+}
+
+@keyframes anim {
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .btn {
